@@ -36,22 +36,23 @@ export default function Template({data}) {
          <li key={Math.random()} className="card purple darken-1">
          <div className="card-content white-text">{e.node.frontmatter.title}</div></li>)}
      </ul>
-   )}
+   )
+ }
  />
   )
 }
 
-export const pageQuery = graphql`
-query{
-  markdownRemark {
-    html
-    frontmatter {
-      date(formatString: "MMMM DD, YYYY")
-      path
-      title
-      content
-    }
-  }
-}
-
-`
+// export const pageQuery = graphql`
+// query{
+//   markdownRemark {
+//     html
+//     frontmatter {
+//       date(formatString: "MMMM DD, YYYY")
+//       path
+//       title
+//       content
+//     }
+//   }
+// }
+//
+// `
